@@ -5,10 +5,8 @@
       "module-resolver",
       {
         "alias": {
-          "react": "preact-compat",
-          "react-dom": "preact-compat",
-          "react-addons-transition-group": "preact-transition-group",
-          "react-addons-css-transition-group": "preact-css-transition-group"
+          "react": "inferno-compat",
+          "react-dom": "inferno-compat"
         }
       }
     ],

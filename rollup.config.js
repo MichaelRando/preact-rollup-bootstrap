@@ -24,12 +24,9 @@ export default {
     replace({'process.env.NODE_ENV': JSON.stringify('development')}),
     commonjs({
       namedExports: {
-        './node_modules/preact/dist/preact.js': [
-          'h',
-          'render',
-          'Component',
-          'cloneElement',
-          'options'
+        './node_modules/inferno-compat/dist/inferno-compat.node.js': [
+            'Component',
+            'PropTypes',
         ]
       }
     })
