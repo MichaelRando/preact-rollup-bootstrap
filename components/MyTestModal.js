@@ -35,7 +35,7 @@ export default class MyTestModal extends Component {
   render () {
     return (
       <div>
-        <Button onClick={this.openDialog}>Log in</Button>
+        <Button onClick={this.openDialog}>Test Modal</Button>
         <Modal
           id='fullPageLogin'
           show={this.state.visible}
