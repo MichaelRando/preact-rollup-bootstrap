@@ -8,7 +8,7 @@ export default class MyTestDialog extends React.Component {
 
     this.state = {
       visible: false,
-
+      destroyOnClose: false,
       accountData: {
         email: '',
         password: ''
@@ -16,19 +16,14 @@ export default class MyTestDialog extends React.Component {
     }
   }
 
-  getInitialState () {
-    return {
-      visible: false,
-      destroyOnClose: false
-    }
-  }
-
   openDialog = (e) => {
     this.setState({visible: true})
+    console.log('dialog is open')
   }
 
   closeDialog = () => {
     this.setState({visible: false})
+    console.log('dialog is closed')
   }
 
   handleChange = (value, event) => {
@@ -42,9 +37,9 @@ export default class MyTestDialog extends React.Component {
   signIn = () => {}
 
   render () {
-    let dialog
-    if (this.state.visible) {
-      dialog = (
+    return (
+      <div>
+        <button onClick={this.openDialog}>Test Dialog</button>
         <Dialog
           id='fullPageLogin'
           title='Log In'
@@ -55,12 +50,6 @@ export default class MyTestDialog extends React.Component {
         >
           <button onClick={this.signIn}>Log In</button>
         </Dialog>
-      )
-    }
-    return (
-      <div>
-        <button onClick={this.openDialog}>Test Dialog</button>
-        {dialog}
       </div>
     )
   }

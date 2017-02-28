@@ -30,6 +30,15 @@ export default {
           'Component',
           'cloneElement',
           'options'
+        ],
+        './node_modules/react/react.js': [
+          'cloneElement',
+          'createElement',
+          'PropTypes',
+          'Children',
+          'PureComponent',
+          'Component',
+          'isValidElement'
         ]
       }
     })
