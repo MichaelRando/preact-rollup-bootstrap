@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import MyTestModal from './components/MyTestModal'
 import 'inferno-devtools'
+import MyTestDialog from './components/MyTestDialog'
+
 import './bootstrap.min.css'
 
 class Main extends React.Component {
@@ -9,6 +11,7 @@ class Main extends React.Component {
     return (
       <div>
         <MyTestModal />
+        <MyTestDialog />
       </div>
     )
   }

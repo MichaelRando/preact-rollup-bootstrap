@@ -25,8 +25,24 @@ export default {
     commonjs({
       namedExports: {
         './node_modules/inferno-compat/dist/inferno-compat.node.js': [
-            'Component',
-            'PropTypes',
+          'Component',
+          'PropTypes',
+        ],
+        './node_modules/preact/dist/preact.js': [
+          'h',
+          'render',
+          'Component',
+          'cloneElement',
+          'options'
+        ],
+        './node_modules/react/react.js': [
+          'cloneElement',
+          'createElement',
+          'PropTypes',
+          'Children',
+          'PureComponent',
+          'Component',
+          'isValidElement'
         ]
       }
     })
