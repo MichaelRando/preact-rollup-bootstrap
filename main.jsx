@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import MyTestModal from './components/MyTestModal'
 import 'inferno-devtools'
 import MyTestDialog from './components/MyTestDialog'
+import MyNextModal from './components/MyNextModal'
 
 import './bootstrap.min.css'
 
@@ -12,6 +13,7 @@ class Main extends React.Component {
       <div>
         <MyTestModal />
         <MyTestDialog />
+        <MyNextModal />
       </div>
     )
   }

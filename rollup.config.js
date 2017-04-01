@@ -26,7 +26,7 @@ export default {
       namedExports: {
         './node_modules/inferno-compat/dist/inferno-compat.node.js': [
           'Component',
-          'PropTypes',
+          'PropTypes'
         ],
         './node_modules/preact/dist/preact.js': [
           'h',
