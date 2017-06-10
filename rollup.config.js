@@ -15,9 +15,26 @@ export default {
       output: true
     }),
     babel({
-      'exclude': [
+      babelrc: false,
+      exclude: [
         'node_modules/preact/**',
         'node_modules/preact-compat/**'
+      ],
+      plugins: [
+        ['module-resolver', {
+          'alias': {
+            'inferno': 'inferno/dist-es',
+            'inferno-shared': 'inferno-shared/dist-es',
+            'react': 'inferno-compat/dist-es',
+            'react-dom': 'inferno-compat/dist-es'
+          }
+        }],
+        'transform-class-properties',
+        'transform-object-rest-spread',
+        'external-helpers'
+      ],
+      presets: [
+        ['react']
       ]
     }),
     nodeResolve(),
